@@ -1,6 +1,15 @@
 import streamlit as st
+from st_pages import show_pages, Page, Section
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+
+def app():
+    st.set_page_config(page_title="Chris' Portfolio", )
+
+    show_pages(
+        [Page('me.py', 'Christian Dähn', '💁'),
+         Page('pf/experience.py', 'Experience', '🏫')]
+    )
+
+
+if __name__ == '__main__':
+    app()

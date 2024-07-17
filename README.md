@@ -17,3 +17,7 @@ A simple Streamlit app template for you to modify!
    ```
    $ streamlit run streamlit_app.py
    ```
+# Usage
+## Badges
+- https://ileriayo.github.io/markdown-badges/#markdown-badges
+- 
