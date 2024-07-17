@@ -1,3 +1,7 @@
-from st_pages import add_page_title
+from streamlit_timeline import timeline
 
-add_page_title()
+with open('md/timeline.json', "r") as f:
+    data = f.read()
+
+# render timeline
+timeline(data, height=600)
